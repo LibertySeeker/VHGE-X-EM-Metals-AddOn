@@ -12,12 +12,6 @@
                 <li>EMHG_GasPoweredAlloyFurnace</li>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName = "VHGE_GasPoweredSmithy"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-          <value>
-            <li>VFE_SmithyCabinet</li>
-          </value>
-        </li>
       </operations>
     </match>
   </Operation>
