@@ -103,7 +103,7 @@
 		<modExtensions>
 			<li Class="VEF.Buildings.RecipeInheritanceExtension">
 				<inheritRecipesFrom>
-					<li>EM_ElectricAlloySmelter</li>
+					<li>EM_ElectricAlloyFurnace</li>
 				</inheritRecipesFrom>
 			</li>
 		</modExtensions>
