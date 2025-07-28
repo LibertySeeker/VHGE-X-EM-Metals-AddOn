@@ -22,4 +22,30 @@
       </operations>
     </match>
   </Operation>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Materials - Metals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+                  <li>Owl_WoodLog</li>
+                  <li>Owl_Firewood</li>
+               </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs</xpath>
+               <value>
+                  <li>Owl_WoodLog</li>
+                  <li>Owl_Firewood</li>
+               </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  
 </Patch>
