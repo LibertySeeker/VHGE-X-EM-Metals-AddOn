@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>VHGE X EM-Metals Patch</name>
-	<packageId>TM3.VHGExEMM.Patch</packageId>
+	<name>VHGE X EM-Metals AddOn</name>
+	<packageId>TM3.VHGExEMM.AddOn</packageId>
 	<author>TM3</author>
 	<supportedVersions>
 		<li>1.5</li>
