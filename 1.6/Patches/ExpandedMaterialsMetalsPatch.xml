@@ -7,10 +7,17 @@
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/WorkGiverDef[defName = "EM_DoBillsAlloyFurnaceOven"]/fixedBillGiverDefs</xpath>
+          <xpath>/Defs/WorkGiverDef[defName="EM_DoBillsAlloyFurnaceOven"]/fixedBillGiverDefs</xpath>
           <value>
                 <li>EMHG_GasPoweredAlloyFurnace</li>
           </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="OskarPotocki.VFE.Medieval2">
+            <xpath>Defs/ThingDef[defName="EMHG_GasPoweredAlloyFurnace"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+               <value>
+                  <li>VFEM2_SmithingAnvil</li>
+                  <li>VFEM2_ForgeBellows</li>
+               </value>
         </li>
       </operations>
     </match>

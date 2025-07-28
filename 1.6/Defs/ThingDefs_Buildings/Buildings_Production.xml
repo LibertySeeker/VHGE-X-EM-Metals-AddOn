@@ -41,6 +41,7 @@
             <Cleanliness>-3</Cleanliness>
         </statBases>
         <size>(3,1)</size>
+		<thingCategories Inherit="false" />
 		<designationCategory>VCHE_PipeNetworks</designationCategory>
         <uiOrder>2510</uiOrder>
         <passability>PassThroughOnly</passability>
@@ -54,6 +55,9 @@
         </inspectorTabs>
         <building>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
+			<workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
         </building>
         <comps>
             <li Class="PipeSystem.CompProperties_ResourceTrader">
@@ -75,11 +79,11 @@
                     <li>ToolCabinet</li>
                 </linkableFacilities>
             </li>
-            <!--Where did this come from? Was it removed from past versions?
+            <!--Where did this come from? Was it removed from past versions?-->
 			<li Class="CompProperties_HeatPusher">
                 <compClass>CompHeatPusherPowered</compClass>
                 <heatPerSecond>5</heatPerSecond>
-            </li>-->
+            </li>
         </comps>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
